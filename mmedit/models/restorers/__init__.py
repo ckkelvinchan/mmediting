@@ -4,8 +4,10 @@ from .edvr import EDVR
 from .esrgan import ESRGAN
 from .liif import LIIF
 from .srgan import SRGAN
+from .tdan import TDAN
 from .ttsr import TTSR
 
 __all__ = [
-    'BasicRestorer', 'SRGAN', 'ESRGAN', 'EDVR', 'LIIF', 'BasicVSR', 'TTSR'
+    'BasicRestorer', 'SRGAN', 'ESRGAN', 'EDVR', 'LIIF', 'BasicVSR', 'TTSR',
+    'TDAN'
 ]
