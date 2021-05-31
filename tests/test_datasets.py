@@ -897,7 +897,7 @@ def test_vid4_dataset():
             pipeline=[],
             scale=4,
             test_mode=False,
-            metric_average_mode='folder',
+            metric_average_mode='clip',
             filename_tmpl='{:08d}')
 
         assert vid4_dataset.data_infos == [
@@ -933,7 +933,7 @@ def test_vid4_dataset():
                 test_mode=False)
 
         with pytest.raises(ValueError):
-            # metric_average_mode can only be either 'folder' or 'all'
+            # metric_average_mode can only be either 'clip' or 'all'
             SRVid4Dataset(
                 lq_folder=root_path,
                 gt_folder=root_path,
